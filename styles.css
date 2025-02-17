@@ -20,9 +20,7 @@ body {
     text-align: center;
     margin: 0;
     padding: 20px;
-    nav
-
-{
+nav {
     background: rgba(0, 0, 0, 0.3); /* Slightly transparent background */
     padding: 15px 0;
     text-align: center;
@@ -31,7 +29,7 @@ body {
 }
 
 nav a {
-    color: #c299ff; /* Soft purple */
+    color: #c299ff;  /* Soft purple */
     text-decoration: none;
     font-weight: bold;
     font-size: 18px;
@@ -41,7 +39,7 @@ nav a {
     transition: all 0.3s ease-in-out;
 }
 
-    nav a:hover {
-        background: #9a7
+nav a:hover {
+    background: #9a7
 
 
