@@ -1,8 +1,5 @@
 ﻿html, body {
     height: 100%;
-}
-
-body {
     font-family: 'Arial', sans-serif;
     background-image: url('./Assets/black_crochet_background.png');
     background-color: #000;
@@ -16,24 +13,47 @@ body {
     text-align: center;
 }
 
+/* Header and Logo */
 header {
+    padding: 10px 0;
+}
+
+.logo {
+    display: block;
+    margin: 20px auto;
+    width: 180px;
+}
+
+/* Navigation Bar */
+nav {
     background: rgba(0, 0, 0, 0.8);
     padding: 10px;
+    text-align: center;
     border-radius: 5px;
 }
 
-nav a {
-    color: #d3aaff;
-    text-decoration: none;
-    font-weight: bold;
-    margin: 0 15px;
-    font-size: 18px;
-}
-
-    nav a:hover {
-        color: #fff;
+    nav a {
+        color: #d3aaff;
+        text-decoration: none;
+        font-weight: bold;
+        margin: 0 15px;
+        font-size: 18px;
     }
 
+        nav a:hover {
+            color: #fff;
+        }
+
+/* General Page Sections */
+section {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 40px 20px;
+    border-radius: 10px;
+    width: 85%;
+    margin: 20px auto;
+}
+
+/* Headings */
 h1, h2, h3 {
     color: #d3aaff;
     padding: 10px;
@@ -41,76 +61,91 @@ h1, h2, h3 {
     border-radius: 5px;
 }
 
-/* 🔹 Commissions Section */
+/* Paragraph Styling */
+p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+/* 🔥 FIXED: About Page Image Issue 🔥 */
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+    .about-container img {
+        max-width: 300px;
+        height: auto;
+        border-radius: 10px;
+        margin: 20px auto;
+    }
+
+/* 🔥 COMMISSIONS PAGE FIX 🔥 */
 .commissions-section {
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.6);
     padding: 40px;
     border-radius: 10px;
-    width: 80%;
+    width: 85%;
     margin: 20px auto;
-    text-align: center;
-    backdrop-filter: blur(5px);
 }
 
     .commissions-section h2 {
-        font-size: 28px;
+        color: #d3aaff;
+        text-align: center;
+    }
+
+.commissions-steps {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+    .commissions-steps li {
+        background: rgba(255, 255, 255, 0.1);
+        padding: 15px;
+        margin: 10px auto;
+        border-radius: 8px;
+        width: 60%;
+        font-size: 18px;
+    }
+
+/* Social Media Links */
+.footer {
+    margin-top: 30px;
+}
+
+    .footer a {
+        margin: 0 10px;
         color: #d3aaff;
         font-weight: bold;
-        margin-bottom: 15px;
     }
 
-    .commissions-section h3 {
-        font-size: 22px;
-        color: #b88cff;
-        font-weight: bold;
-        margin-bottom: 10px;
-    }
-
-    .commissions-section p {
-        font-size: 18px;
-        line-height: 1.6;
-        color: #fff;
-        margin-bottom: 15px;
-    }
-
-    /* 🔹 Ordered List Styling */
-    .commissions-section ol {
-        list-style: none;
-        padding: 0;
-        text-align: left;
-        max-width: 600px;
-        margin: 0 auto;
-    }
-
-        .commissions-section ol li {
-            font-size: 18px;
-            padding: 8px;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 5px;
-            margin-bottom: 8px;
-        }
-
-    /* 🔹 Email Styling */
-    .commissions-section a {
-        color: #b88cff;
-        font-weight: bold;
-        text-decoration: none;
-    }
-
-        .commissions-section a:hover {
-            text-shadow: 0px 0px 10px #d3aaff;
-        }
-
-/* 🔹 Mobile Responsiveness */
+/* Mobile Responsiveness */
 @media screen and (max-width: 768px) {
-    .commissions-section {
-        width: 90%;
+    section {
+        width: 95%;
         padding: 20px;
+    }
+
+    .logo {
+        width: 140px;
     }
 
     nav a {
         display: block;
         margin: 5px 0;
         font-size: 16px;
+    }
+
+    .about-container img {
+        max-width: 250px;
+    }
+
+    .commissions-steps li {
+        width: 80%;
     }
 }
