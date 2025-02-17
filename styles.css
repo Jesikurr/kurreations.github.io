@@ -1,25 +1,15 @@
 /* General Styles */
-/* Apply the crochet background globally */
 body {
     font-family: 'Arial', sans-serif;
-    background-image: url('Assets/black_crochet_background.png'); /* Make sure this path is correct */
+    background-image: url('Assets/black_crochet_background.png'); /* Updated path */
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: repeat; /* Ensures a seamless crochet texture */
     background-position: center;
-    background-attachment: fixed; /* Ensures background stays fixed while scrolling */
+    background-attachment: fixed; /* Keeps background in place */
     color: #fff;
     margin: 0;
     padding: 0;
     text-align: center;
-}
-
-/* Optional: Apply the background to sections */
-section {
-    background: rgba(0, 0, 0, 0.7); /* Dark overlay for better text readability */
-    padding: 50px 0;
-    border-radius: 10px;
-    width: 80%;
-    margin: 20px auto;
 }
 
 /* Logo Styling */
@@ -31,7 +21,7 @@ section {
 
 /* Navigation Bar */
 nav {
-    background: transparent;
+    background: transparent; /* Removed the black bar */
     padding: 10px;
     text-align: center;
 }
@@ -55,26 +45,25 @@ h1, h2, h3 {
 /* Paragraph Styling */
 p {
     font-size: 18px;
-    line-height: 1.5;
-    margin-bottom: 15px;
+    line-height: 1.4; /* Reduced spacing */
+    margin-bottom: 10px;
 }
 
-/* Links */
-a {
-    color: #b88cff;
-    text-decoration: none;
-}
-
-    a:hover {
-        text-decoration: underline;
-    }
-
-/* About Page */
+/* About Page - Fix Large Image Issue */
 .about-container img {
-    max-width: 100%;
+    max-width: 80%; /* Adjust width for responsiveness */
     height: auto;
     border-radius: 10px;
     margin-bottom: 20px;
+}
+
+/* Sections - Fix Spacing */
+section {
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay for better text readability */
+    padding: 40px 20px;
+    border-radius: 10px;
+    width: 85%;
+    margin: 20px auto;
 }
 
 /* Social Media Links */
@@ -91,7 +80,7 @@ a {
 @media screen and (max-width: 768px) {
     section {
         width: 95%;
-        padding: 30px;
+        padding: 20px;
     }
 
     .logo {
