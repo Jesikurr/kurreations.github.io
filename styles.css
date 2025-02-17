@@ -82,6 +82,7 @@ section {
     border-radius: 10px;
     width: 85%;
     margin: 20px auto;
+    text-align: center;
 }
 
     .commissions-container h2 {
@@ -95,18 +96,14 @@ section {
         margin-bottom: 10px;
     }
 
-.commissions-list {
-    list-style-type: none;
-    padding: 0;
+.commissions-box {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    margin: 10px auto;
+    border-radius: 5px;
+    font-size: 18px;
+    width: 70%;
 }
-
-    .commissions-list li {
-        background: rgba(255, 255, 255, 0.2);
-        padding: 10px;
-        margin: 10px 0;
-        border-radius: 5px;
-        font-size: 18px;
-    }
 
 .footer {
     margin-top: 30px;
