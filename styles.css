@@ -6,6 +6,7 @@ html, body {
 body {
     font-family: 'Arial', sans-serif;
     background-image: url('./Assets/black_crochet_background.png'); /* Ensure correct relative path */
+    background-color: #000; /* Fallback color */
     background-size: cover;
     background-repeat: repeat;
     background-position: center;
