@@ -8,16 +8,8 @@
     <link rel="icon" type="image/x-icon" href="Assets/favicon.ico">
 </head>
 <body>
-    <header>
-        <img src="Assets/logo.png" alt="Kurreations Logo" class="logo">
-        <nav>
-            <a href="index.html">Home</a> |
-            <a href="about.html">About</a> |
-            <a href="commissions.html">Commissions</a> |
-            <a href="https://www.etsy.com/shop/Kurreations">Etsy Shop</a> |
-            <a href="tutorials.html">Tutorials</a>
-        </nav>
-    </header>
+
+    <div id="header"></div>
 
     <section>
         <h2>Custom Commissions</h2>
@@ -30,12 +22,13 @@
             <li><strong>Crafting Begins</strong> – Once confirmed, I’ll start crocheting your creation.</li>
             <li><strong>Final Touches & Delivery</strong> – Once finished, I’ll ship it to you!</li>
         </ol>
-
-        <h3>Pricing & Payment</h3>
-        <p>Prices vary based on <strong>size, detail, and complexity</strong>. I accept PayPal, Venmo, and other payment methods.</p>
-
-        <h3>Request a Commission</h3>
-        <p>Email me at <a href="mailto:jesikurr@kurreations.com">jesikurr@kurreations.com</a> to start your custom order!</p>
     </section>
+
+    <script>
+        fetch("header.html")
+            .then(response => response.text())
+            .then(data => document.getElementById("header").innerHTML = data);
+    </script>
+
 </body>
 </html>
