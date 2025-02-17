@@ -77,33 +77,70 @@ section {
 
 /* Commissions Section */
 .commissions-container {
-    background: rgba(0, 0, 0, 0.8);
-    padding: 40px;
-    border-radius: 10px;
-    width: 85%;
-    margin: 20px auto;
+    background: rgba(0, 0, 0, 0.85);
+    padding: 50px;
+    border-radius: 15px;
+    width: 80%;
+    margin: 30px auto;
     text-align: center;
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.2);
 }
 
     .commissions-container h2 {
-        font-size: 28px;
+        font-size: 32px;
         font-weight: bold;
         color: #d3aaff;
-    }
-
-    .commissions-container p {
-        font-size: 18px;
         margin-bottom: 10px;
     }
 
-.commissions-box {
-    background: rgba(255, 255, 255, 0.2);
-    padding: 10px;
-    margin: 10px auto;
-    border-radius: 5px;
+    .commissions-container h3 {
+        font-size: 24px;
+        font-weight: bold;
+        color: #b88cff;
+        margin-top: 20px;
+    }
+
+.intro-text {
     font-size: 18px;
-    width: 70%;
+    margin-bottom: 20px;
+    color: #fff;
 }
+
+.commissions-box-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.commissions-box {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 15px;
+    margin: 5px auto;
+    border-radius: 8px;
+    font-size: 18px;
+    width: 75%;
+    text-align: center;
+    font-weight: 500;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
+}
+
+    .commissions-box p {
+        margin: 0;
+        color: #fff;
+    }
+
+.contact-info {
+    font-size: 18px;
+    margin-top: 20px;
+    color: #fff;
+}
+
+    .contact-info a {
+        color: #b88cff;
+        font-weight: bold;
+    }
 
 .footer {
     margin-top: 30px;
