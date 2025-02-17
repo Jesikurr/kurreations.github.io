@@ -10,16 +10,23 @@
     background-attachment: fixed;
     color: #fff;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 header {
-    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-top: 20px;
 }
 
 .logo {
     display: block;
-    margin: 80px auto 20px;
     width: 180px;
+    margin-bottom: 10px;
 }
 
 nav {
@@ -27,10 +34,8 @@ nav {
     background: rgba(0, 0, 0, 0.8);
     padding: 10px 0;
     text-align: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000;
+    position: relative;
+    border-radius: 5px;
 }
 
     nav a {
@@ -45,25 +50,14 @@ nav {
             color: #fff;
         }
 
-h1, h2, h3 {
-    color: #d3aaff;
-    padding: 10px;
-    display: inline-block;
-    border-radius: 5px;
-}
-
-p {
-    font-size: 18px;
-    line-height: 1.5;
-    margin-bottom: 15px;
-}
-
 section {
     background: rgba(0, 0, 0, 0.6);
-    padding: 100px 20px 40px;
+    padding: 40px 20px;
     border-radius: 10px;
     width: 85%;
+    max-width: 800px;
     margin: 20px auto;
+    padding-top: 30px;
 }
 
 .about-container {
@@ -84,100 +78,25 @@ section {
         margin: 20px auto;
     }
 
-.commissions-container {
-    background: rgba(0, 0, 0, 0.85);
-    padding: 40px;
-    border-radius: 15px;
-    width: 80%;
-    margin: 20px auto;
-    text-align: center;
-    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.15);
-}
-
-    .commissions-container h2 {
-        font-size: 30px;
-        font-weight: bold;
-        color: #d3aaff;
-        margin-bottom: 5px;
-    }
-
-    .commissions-container h3 {
-        font-size: 22px;
-        font-weight: bold;
-        color: #b88cff;
-        margin: 10px 0;
-    }
-
-.intro-text {
-    font-size: 17px;
-    margin-bottom: 15px;
-    color: #fff;
-    line-height: 1.3;
-}
-
-.commissions-box-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 8px;
-    margin-top: 10px;
-}
-
-.commissions-box {
-    background: rgba(255, 255, 255, 0.12);
-    padding: 12px;
-    border-radius: 8px;
-    font-size: 17px;
-    width: 75%;
-    text-align: center;
-    font-weight: 500;
-    line-height: 1.4;
-    box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.1);
-}
-
-    .commissions-box p {
-        margin: 0;
-        color: #fff;
-    }
-
-.contact-info {
-    font-size: 17px;
-    margin-top: 15px;
-    color: #fff;
-    line-height: 1.3;
-}
-
-    .contact-info a {
-        color: #b88cff;
-        font-weight: bold;
-    }
-
-.footer {
-    margin-top: 30px;
-}
-
-    .footer a {
-        margin: 0 10px;
-        color: #d3aaff;
-        font-weight: bold;
-    }
-
 @media screen and (max-width: 768px) {
     section {
         width: 95%;
-        padding: 100px 20px 20px;
+        padding: 20px;
     }
 
     .logo {
         width: 140px;
-        margin: 90px auto 20px;
     }
 
-    nav a {
-        display: block;
-        margin: 5px auto;
-        font-size: 16px;
+    nav {
+        width: 95%;
     }
+
+        nav a {
+            display: block;
+            margin: 5px auto;
+            font-size: 16px;
+        }
 
     .about-container img {
         max-width: 80%;
