@@ -74,9 +74,10 @@ section {
 }
 
     .about-container img {
-        max-width: 100%;
-        width: auto;
+        max-width: 600px; 
+        width: 100%;
         height: auto;
+        border-radius: 10px;
         display: block;
         margin: 20px auto;
     }
@@ -102,7 +103,11 @@ section {
         }
 
     .about-container img {
-        max-width: 80%;
-        max-height: 300px;
+        max-width: 600px; /* Limits size on desktop */
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        display: block;
+        margin: 20px auto;
     }
 }
