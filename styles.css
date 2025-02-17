@@ -186,3 +186,33 @@ h3 {
     display: inline-block;
     margin-top: 10px;
 }
+
+/* Responsive Design for Mobile */
+@media screen and (max-width: 768px) {
+    /* Adjust shop section spacing */
+    .shop {
+        padding: 10px;
+    }
+
+    /* Stack items instead of displaying them in a row */
+    .shop-items {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Adjust item width for mobile */
+    .item {
+        width: 90%; /* Make items take up most of the screen width */
+        max-width: 350px; /* Prevent them from being too wide */
+    }
+
+    /* Make sure buttons stack neatly */
+    .button-group {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .buy-button, .pattern-button {
+        width: 100%; /* Full width buttons */
+    }
+}
