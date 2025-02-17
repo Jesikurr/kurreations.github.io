@@ -1,5 +1,4 @@
 /* General Styles */
-/* General Styles */
 body {
     font-family: 'Arial', sans-serif;
     background-image: url('./Assets/black_crochet_background.png'); /* Ensure correct relative path */
@@ -60,22 +59,21 @@ p {
     border-radius: 5px;
 }
 
-/* About Page - Fix Large Image Issue */
-.about-container img {
-    max-width: 40px; /* Adjust size as needed */
-    width: 80%; /* Scales properly */
-    height: auto;
-    border-radius: 10px;
-    display: block;
-    margin: 20px auto;
-}
-
-/* Section Styling */
+/* Fix for Sections Not Covering the Whole Page */
 section {
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.8); /* Dark overlay */
     padding: 40px 20px;
     border-radius: 10px;
     width: 85%;
+    margin: 20px auto;
+}
+
+/* Fix for Large About Image */
+.about-container img {
+    max-width: 40%; /* Adjust size as needed */
+    height: auto;
+    border-radius: 10px;
+    display: block;
     margin: 20px auto;
 }
 
