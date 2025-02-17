@@ -58,7 +58,7 @@ p {
     margin-bottom: 15px;
 }
 
-/* 🔥 FIXED: About Page Image Issue 🔥 */
+/* About Page Image Issue */
 .about-container {
     display: flex;
     flex-direction: column;
@@ -68,8 +68,8 @@ p {
 }
 
     .about-container img {
-        max-width: 300px !important; /* 🔥 Forces max size */
-        height: auto; /* 🔥 Keeps the aspect ratio */
+        max-width: 300px; /* Forces max size */
+        height: auto; /* Keeps the aspect ratio */
         border-radius: 10px;
         margin: 20px auto;
     }
@@ -112,6 +112,6 @@ section {
     }
 
     .about-container img {
-        max-width: 250px !important; /* 🔥 Shrinks image further on mobile */
+        max-width: 250px; /* Shrinks image further on mobile */
     }
 }
