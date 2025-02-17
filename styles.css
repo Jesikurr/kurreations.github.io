@@ -41,5 +41,18 @@ nav a:hover {
     color: #9a73ff;
 }
 
+footer {
+    text-align: center;
+    margin-top: 50px;
+    color: #999;
+}
 
+    footer a {
+        color: #c299ff;
+        text-decoration: none;
+    }
+
+        footer a:hover {
+            color: white;
+        }
 
