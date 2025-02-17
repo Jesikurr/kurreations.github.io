@@ -104,3 +104,85 @@ footer {
         .commission-form a:hover {
             text-decoration: underline;
         }
+
+.shop {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Section Titles */
+.shop-section {
+    margin: 40px 0;
+}
+
+    .shop-section h2 {
+        font-size: 24px;
+        text-decoration: underline;
+        margin-bottom: 10px;
+    }
+
+/* Shop Items Grid */
+.shop-items {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Individual Item Styling */
+.item {
+    background: #222;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+    .item img {
+        width: 100%;
+        border-radius: 8px;
+    }
+
+h3 {
+    margin-top: 10px;
+}
+
+/* Buttons */
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.buy-button, .pattern-button {
+    background-color: purple;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 48%;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+    .buy-button:hover {
+        background-color: #a100a1;
+    }
+
+.pattern-button {
+    background-color: #555;
+}
+
+    .pattern-button:hover {
+        background-color: #777;
+    }
+
+.out-of-stock {
+    background-color: #ff4d4d; /* Red background */
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+}
