@@ -1,73 +1,59 @@
 /* General Styles */
 body {
     font-family: 'Arial', sans-serif;
-    background: url('/Assets/black_crochet_background.png') repeat;
+    background-image: url('Assets/black_crochet_background.png');
     background-size: cover;
-    background-attachment: fixed; /* Keeps background static */
+    background-repeat: no-repeat;
     background-position: center;
+    background-attachment: fixed;
     color: #fff;
     margin: 0;
     padding: 0;
     text-align: center;
 }
 
-/* Logo Styling */
-.logo {
-    display: block;
+/* Section Background for Readability */
+section {
+    background: rgba(0, 0, 0, 0.7); /* Dark overlay for better text readability */
+    padding: 40px 20px;
+    border-radius: 10px;
+    width: 85%;
     margin: 20px auto;
-    width: 200px;
 }
-
-/* Navigation Bar */
-nav {
-    background: transparent; /* Removed black bar */
-    padding: 10px;
-    text-align: center;
-}
-
-    nav a {
-        color: #b88cff;
-        text-decoration: none;
-        font-weight: bold;
-        margin: 0 15px;
-    }
-
-        nav a:hover {
-            color: #fff;
-        }
 
 /* Headings */
 h1, h2, h3 {
-    color: #b88cff;
+    color: #d4b3ff; /* Brighter purple for contrast */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Shadow for readability */
 }
 
 /* Paragraph Styling */
 p {
     font-size: 18px;
-    line-height: 1.4; /* Reduced spacing */
-    margin-bottom: 10px;
+    line-height: 1.5;
+    color: #f8f8f8; /* Slightly off-white for better contrast */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
 }
 
-/* About Page - Fix Large Image Issue */
-.about-container img {
-    max-width: 40%; /* Fixed width to 40% for better scaling */
-    height: auto;
-    border-radius: 10px;
-    display: block;
-    margin: 20px auto; /* Center the image */
+/* Navigation Bar */
+nav a {
+    color: #b88cff;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 15px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.9);
 }
 
-/* Sections - Ensure Background Shows */
-section {
-    background: transparent; /* Fix: Removed dark overlay so background is visible */
-    padding: 40px 20px;
-    width: 85%;
-    margin: 20px auto;
-}
+    nav a:hover {
+        color: #fff;
+    }
 
-/* Footer */
+/* Social Media Links */
 .footer {
     margin-top: 30px;
+    background: rgba(0, 0, 0, 0.6); /* Slight background for readability */
+    padding: 10px;
+    border-radius: 8px;
 }
 
     .footer a {
@@ -89,9 +75,5 @@ section {
     nav a {
         display: block;
         margin: 5px 0;
-    }
-
-    .about-container img {
-        max-width: 80%; /* Makes image fit better on mobile */
     }
 }
