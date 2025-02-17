@@ -62,7 +62,7 @@ p {
 
 /* About Page - Fix Large Image Issue */
 .about-container img {
-    max-width: 40px; /* Ensures image doesn't get too large */
+    max-width: 300px; /* Adjust size as needed */
     width: 80%; /* Scales properly */
     height: auto;
     border-radius: 10px;
