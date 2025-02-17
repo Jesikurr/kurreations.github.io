@@ -1,23 +1,25 @@
 /* General Styles */
+/* Apply the crochet background globally */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #111;
+    background-image: url('Assets/black_crochet_background.png'); /* Make sure this path is correct */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed; /* Ensures background stays fixed while scrolling */
     color: #fff;
     margin: 0;
     padding: 0;
     text-align: center;
 }
 
-/* Background Image */
+/* Optional: Apply the background to sections */
 section {
-    background-image: url('Assets/black_crochet_background.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    background: rgba(0, 0, 0, 0.7); /* Dark overlay for better text readability */
     padding: 50px 0;
     border-radius: 10px;
-    margin: 20px auto;
     width: 80%;
+    margin: 20px auto;
 }
 
 /* Logo Styling */
