@@ -1,11 +1,10 @@
 /* General Styles */
 body {
     font-family: 'Arial', sans-serif;
-    background-image: url('Assets/black_crochet_background.png'); /* Make sure this path is correct */
+    background: url('Assets/black_crochet_background.png') repeat; /* Fix: Corrected path & added repeat */
     background-size: cover;
-    background-repeat: no-repeat;
+    background-attachment: fixed; /* Keeps background static */
     background-position: center;
-    background-attachment: fixed; /* Ensures background stays fixed while scrolling */
     color: #fff;
     margin: 0;
     padding: 0;
@@ -21,7 +20,7 @@ body {
 
 /* Navigation Bar */
 nav {
-    background: transparent; /* Removed the black bar */
+    background: transparent; /* Removed black bar */
     padding: 10px;
     text-align: center;
 }
@@ -51,23 +50,22 @@ p {
 
 /* About Page - Fix Large Image Issue */
 .about-container img {
-    max-width: 60%; /* Reduce width to 60% for better scaling */
+    max-width: 40%; /* Fixed width to 40% for better scaling */
     height: auto;
     border-radius: 10px;
     display: block;
     margin: 20px auto; /* Center the image */
 }
 
-/* Sections - Fix Spacing */
+/* Sections - Ensure Background Shows */
 section {
-    background: rgba(0, 0, 0, 0.6); /* Dark overlay for better text readability */
+    background: transparent; /* Fix: Removed dark overlay so background is visible */
     padding: 40px 20px;
-    border-radius: 10px;
     width: 85%;
     margin: 20px auto;
 }
 
-/* Social Media Links */
+/* Footer */
 .footer {
     margin-top: 30px;
 }
@@ -91,5 +89,9 @@ section {
     nav a {
         display: block;
         margin: 5px 0;
+    }
+
+    .about-container img {
+        max-width: 80%; /* Makes image fit better on mobile */
     }
 }
