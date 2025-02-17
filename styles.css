@@ -1,51 +1,103 @@
-/* General Styling */
+/* General Styles */
 body {
-    background-color: #181818;
-    color: #ffffff;
-    font-family: Arial, sans-serif;
-    text-align: center;
+    font-family: 'Arial', sans-serif;
+    background-color: #111;
+    color: #fff;
     margin: 0;
     padding: 0;
+    text-align: center;
+}
+
+/* Background Image */
+section {
+    background-image: url('Assets/black_crochet_background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 50px 0;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 80%;
 }
 
 /* Logo Styling */
 .logo {
     display: block;
     margin: 20px auto;
-    width: 150px; /* Adjust size */
+    width: 200px;
 }
 
 /* Navigation Bar */
 nav {
-    background-color: transparent; /* Remove black box */
+    background: transparent;
     padding: 10px;
+    text-align: center;
 }
 
     nav a {
-        color: #a97ffb;
+        color: #b88cff;
         text-decoration: none;
         font-weight: bold;
-        margin: 0 10px;
+        margin: 0 15px;
     }
 
         nav a:hover {
-            color: #ffffff;
+            color: #fff;
         }
 
-/* Section Styling */
-section {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
+/* Headings */
+h1, h2, h3 {
+    color: #b88cff;
 }
 
-/* About Page Image */
-.about-img {
-    width: 250px; /* Resize to be smaller */
+/* Paragraph Styling */
+p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+/* Links */
+a {
+    color: #b88cff;
+    text-decoration: none;
+}
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+/* About Page */
+.about-container img {
+    max-width: 100%;
+    height: auto;
     border-radius: 10px;
+    margin-bottom: 20px;
 }
 
-/* Footer Styling */
-footer {
-    margin-top: 20px;
+/* Social Media Links */
+.footer {
+    margin-top: 30px;
+}
+
+    .footer a {
+        margin: 0 10px;
+        color: #b88cff;
+    }
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+    section {
+        width: 95%;
+        padding: 30px;
+    }
+
+    .logo {
+        width: 150px;
+    }
+
+    nav a {
+        display: block;
+        margin: 5px 0;
+    }
 }
