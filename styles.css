@@ -55,14 +55,23 @@ p {
 }
 
 /* About Page - Fix Large Image Issue */
-.about-container img {
-    max-width: 300px; /* Set max width to prevent oversized image */
-    width: 100%; /* Ensures responsiveness */
-    height: auto;
-    border-radius: 10px;
-    display: block;
-    margin: 20px auto;
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
 }
+
+    .about-container img {
+        max-width: 300px; /* Prevents large images */
+        width: 100%; /* Ensures responsiveness */
+        height: auto;
+        border-radius: 10px;
+        display: block;
+        margin: 20px auto;
+        object-fit: contain;
+    }
 
 /* Section Styling */
 section {
@@ -102,6 +111,6 @@ section {
     }
 
     .about-container img {
-        max-width: 90%;
+        max-width: 90%; /* Ensures image doesn't dominate smaller screens */
     }
 }
