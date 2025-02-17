@@ -1,35 +1,31 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>About - Kurreations</title>
-        <link rel="stylesheet" href="styles.css">
-        <link rel="icon" type="image/x-icon" href="Assets/favicon.ico">
-    </head>
-    <body>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Kurreations</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
-        <section>
-            <h2>About Kurreations</h2>
-            <img src="Assets/about.jpg" alt="Handmade Creations" class="about-image">
-            <p>
-                Hey there, fellow chaos enthusiast! I'm Jesikurr, the mastermind (or mad scientist?) behind Kurreations—
-                where crochet meets creativity, chaos, and a little bit of geeky magic.
-            </p>
-            <p>
-                I don't just make cute plushies and cozy crafts—I conjure up <strong>weird, nerdy, and sometimes downright unhinged</strong> creations.
-                Want a cuddly Cthulhu? A crocheted dragon with battle scars? A chunky goblin plush? Oh, you're in the right place.
-            </p>
-        </section>
+    <header>
+        <img src="Assets/logo.png" alt="Kurreations Logo" class="logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="commissions.html">Commissions</a>
+            <a href="https://www.etsy.com/shop/Kurreations" target="_blank">Etsy Shop</a>
+            <a href="tutorials.html">Tutorials</a>
+        </nav>
+    </header>
 
-        <script>
-            fetch("header.html")
-                .then(response => response.text())
-                .then(data => document.getElementById("header").innerHTML = data);
-        </script>
+    <section>
+        <h2>About Kurreations</h2>
+        <img src="Assets/about.jpg" alt="About Kurreations" class="about-img">
+        <p>Hey there, fellow chaos enthusiast! I'm Jesikurr, the mastermind (or mad scientist?) behind Kurreations—where crochet meets creativity, chaos, and geeky magic.</p>
+        <p>I create weird, nerdy, and sometimes downright unhinged plushies and accessories.</p>
+        <p>Welcome to the madness—let's make something weird together!</p>
+    </section>
 
-    </body>
+</body>
 </html>
