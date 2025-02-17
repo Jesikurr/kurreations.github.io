@@ -54,7 +54,7 @@ p {
     margin-bottom: 15px;
 }
 
-/* About Page - Fix Large Image Issue */
+/* 🔥 FIXED: About Page Image Issue 🔥 */
 .about-container {
     display: flex;
     justify-content: center;
@@ -64,9 +64,9 @@ p {
 }
 
     .about-container img {
-        max-width: 300px; /* Prevents large images */
-        width: 100%; /* Ensures responsiveness */
-        height: auto;
+        max-width: 300px !important; /* 🔥 Strict max-width to prevent large images */
+        width: auto !important; /* 🔥 Ensures it does not expand to fill width */
+        height: auto !important; /* 🔥 Keeps the aspect ratio correct */
         border-radius: 10px;
         display: block;
         margin: 20px auto;
@@ -111,6 +111,6 @@ section {
     }
 
     .about-container img {
-        max-width: 90%; /* Ensures image doesn't dominate smaller screens */
+        max-width: 250px !important; /* 🔥 Shrinks image even further on mobile */
     }
 }
