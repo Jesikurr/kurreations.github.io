@@ -1,23 +1,18 @@
 ﻿html, body {
     height: 100%;
+    margin: 0;
+    padding: 0;
     font-family: 'Arial', sans-serif;
     background-image: url('./Assets/black_crochet_background.png');
-    background-color: #000;
     background-size: cover;
     background-repeat: repeat;
     background-position: center;
     background-attachment: fixed;
     color: #fff;
-    margin: 0;
-    padding: 0;
     text-align: center;
 }
 
-/* Header and Logo */
-header {
-    padding: 10px 0;
-}
-
+/* Logo Styling */
 .logo {
     display: block;
     margin: 20px auto;
@@ -44,15 +39,6 @@ nav {
             color: #fff;
         }
 
-/* General Page Sections */
-section {
-    background: rgba(0, 0, 0, 0.6);
-    padding: 40px 20px;
-    border-radius: 10px;
-    width: 85%;
-    margin: 20px auto;
-}
-
 /* Headings */
 h1, h2, h3 {
     color: #d3aaff;
@@ -68,7 +54,16 @@ p {
     margin-bottom: 15px;
 }
 
-/* 🔥 FIXED: About Page Image Issue 🔥 */
+/* General Section Styling */
+section {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 40px 20px;
+    border-radius: 10px;
+    width: 85%;
+    margin: 20px auto;
+}
+
+/* About Page Image */
 .about-container {
     display: flex;
     flex-direction: column;
@@ -78,38 +73,43 @@ p {
 }
 
     .about-container img {
-        max-width: 300px;
+        max-width: 350px; /* Fixed size to ensure it doesn't stretch */
+        width: auto;
         height: auto;
         border-radius: 10px;
         margin: 20px auto;
     }
 
-/* 🔥 COMMISSIONS PAGE FIX 🔥 */
-.commissions-section {
-    background: rgba(0, 0, 0, 0.6);
+/* Commission Section */
+.commissions-container {
+    background: rgba(0, 0, 0, 0.8);
     padding: 40px;
     border-radius: 10px;
     width: 85%;
     margin: 20px auto;
 }
 
-    .commissions-section h2 {
+    .commissions-container h2 {
+        font-size: 28px;
+        font-weight: bold;
         color: #d3aaff;
-        text-align: center;
     }
 
-.commissions-steps {
-    list-style: none;
+    .commissions-container p {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+.commissions-list {
+    list-style-type: none;
     padding: 0;
-    text-align: center;
 }
 
-    .commissions-steps li {
-        background: rgba(255, 255, 255, 0.1);
-        padding: 15px;
-        margin: 10px auto;
-        border-radius: 8px;
-        width: 60%;
+    .commissions-list li {
+        background: rgba(255, 255, 255, 0.2);
+        padding: 10px;
+        margin: 10px 0;
+        border-radius: 5px;
         font-size: 18px;
     }
 
@@ -143,9 +143,5 @@ p {
 
     .about-container img {
         max-width: 250px;
-    }
-
-    .commissions-steps li {
-        width: 80%;
     }
 }
