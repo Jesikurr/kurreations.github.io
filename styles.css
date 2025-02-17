@@ -56,3 +56,42 @@ footer {
             color: white;
         }
 
+.about-container {
+    text-align: center;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    color: white;
+    font-size: 18px;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.about-img {
+    width: 250px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.2);
+}
+
+/* Optional: Add a funky glitch effect */
+.about-container h1 {
+    font-size: 2.5em;
+    text-shadow: 0px 0px 10px rgba(154, 115, 255, 0.8);
+    animation: glitch 1.5s infinite alternate;
+}
+
+@keyframes glitch {
+    0% {
+        text-shadow: 2px 2px 5px #ff00ff, -2px -2px 5px #00ffff;
+    }
+
+    100% {
+        text-shadow: -2px -2px 5px #ff00ff, 2px 2px 5px #00ffff;
+    }
+}
+
