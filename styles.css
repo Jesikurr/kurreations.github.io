@@ -74,12 +74,13 @@ section {
 }
 
     .about-container img {
-        max-width: 300px; 
+        max-width: 300px;
         width: 100%;
         height: auto;
         border-radius: 10px;
         display: block;
         margin: 20px auto;
+        object-fit: contain;
     }
 
 @media screen and (max-width: 768px) {
@@ -103,7 +104,7 @@ section {
         }
 
     .about-container img {
-        max-width: 50%; /* Keeps it small on mobile too */
-        max-height: 150px;
+        max-width: 80%;
+        height: auto;
     }
 }
