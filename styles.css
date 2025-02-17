@@ -20,3 +20,19 @@ body {
     margin: 0;
     padding: 20px;
 }
+
+nav {
+    text-align: center;
+    margin-top: 10px;
+}
+
+    nav a {
+        color: #9a73ff; /* Purple color */
+        text-decoration: none;
+        font-weight: bold;
+        margin: 0 15px; /* Space between links */
+    }
+
+        nav a:hover {
+            color: #c299ff; /* Lighter purple on hover */
+        }
