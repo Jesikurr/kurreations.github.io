@@ -8,9 +8,9 @@ header {
         margin: 20px auto;
         width: 260px;
         height: auto;
-        border-radius: 50%; /* Helps blend the edges */
-        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3); /* Softer glow */
-        background: none; /* Remove the dark background */
+        border-radius: 50%; /* Helps smooth the edges */
+        box-shadow: none; /* Remove the glow completely */
+        background: none; /* Ensure no background is applied */
     }
 
 body {
