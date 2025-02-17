@@ -1,211 +1,97 @@
-<head >
-<script >
-fetch("Assets/header.html")
-.then(response => response.text())
-.then(data => document.head.innerHTML += data);
-</script >
-</head >
 /* General Page Styling */
 body {
     background-color: #1a1a1a;
     color: #ffffff;
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
-/* Logo */
+/* Header Section */
+header {
+    padding: 20px;
+}
+
 .logo {
-    width: 150px;
+    max-width: 150px;
     display: block;
     margin: 0 auto;
-    padding-top: 10px;
 }
 
-/* Navigation */
+/* Navigation Bar */
 nav {
     margin-top: 10px;
-    font-size: 1.1rem;
+    padding: 10px;
 }
 
     nav a {
-        color: #b185db;
+        color: #b68df7;
         text-decoration: none;
-        padding: 5px 10px;
+        font-weight: bold;
+        padding: 10px;
     }
 
         nav a:hover {
             text-decoration: underline;
         }
 
-/* About Section */
-.about-title {
-    margin-top: 20px; /* Reduce space between navbar and title */
-    font-size: 2rem;
-    font-weight: bold;
-}
-
-.about-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+/* Section Styling */
+section {
+    width: 80%;
     max-width: 800px;
     margin: 20px auto;
-}
-
-/* About Image */
-.about-img {
-    width: 250px;
-    border-radius: 10px;
-    margin-bottom: 10px;
-}
-
-/* Paragraphs in About Section */
-.about-section p {
-    line-height: 1.4;
-    margin-bottom: 10px;
-    text-align: center;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* Footer */
-footer {
-    margin-top: 20px;
-}
-
-    footer a {
-        color: #b185db;
-        text-decoration: none;
-    }
-
-        footer a:hover {
-            text-decoration: underline;
-        }
-
-.commissions {
-    text-align: center;
-    max-width: 800px;
-    margin: auto;
     padding: 20px;
 }
 
-.commission-steps, .commission-pricing, .commission-form {
-    background: rgba(255, 255, 255, 0.1);
-    padding: 20px;
-    margin: 20px 0;
+/* Headings */
+h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+/* About Page */
+.about-image {
+    max-width: 100%;
     border-radius: 10px;
+    margin-bottom: 20px;
 }
 
-    .commission-steps ol {
-        text-align: left;
-        display: inline-block;
-    }
-
-    .commission-form a {
-        color: #a67ffb;
-        font-weight: bold;
-        text-decoration: none;
-    }
-
-        .commission-form a:hover {
-            text-decoration: underline;
-        }
-
-.shop {
-    text-align: center;
-    margin-top: 30px;
+/* Text Formatting */
+p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-bottom: 15px;
 }
 
-/* Section Titles */
-.shop-section {
-    margin: 40px 0;
-}
-
-/* Individual Item Styling */
-.item {
-    background: #222;
-    padding: 15px;
-    border-radius: 10px;
-    text-align: center;
-    width: 250px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-    .item img {
-        width: 100%;
-        border-radius: 8px;
-    }
-
-h3 {
-    margin-top: 10px;
-}
-
-/* Buttons */
-.button-group {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 10px;
-}
-
-.buy-button, .pattern-button {
-    background-color: purple;
-    color: white;
-    border: none;
-    padding: 10px;
-    width: 48%;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-    .buy-button:hover {
-        background-color: #a100a1;
-    }
-
-.pattern-button {
-    background-color: #555;
-}
-
-    .pattern-button:hover {
-        background-color: #777;
-    }
-
-.out-of-stock {
-    background-color: #ff4d4d; /* Red background */
-    color: white;
+/* Links */
+a {
+    color: #b68df7;
+    text-decoration: none;
     font-weight: bold;
-    padding: 5px 10px;
-    border-radius: 5px;
-    display: inline-block;
-    margin-top: 10px;
 }
 
-/* Responsive Design for Mobile */
-@media screen and (max-width: 768px) {
-    /* Adjust shop section spacing */
-    .shop {
-        padding: 10px;
+    a:hover {
+        text-decoration: underline;
     }
 
-    /* Stack items instead of displaying them in a row */
-    .shop-items {
-        flex-direction: column;
-        align-items: center;
+/* Mobile Responsiveness */
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 14px;
     }
 
-    /* Adjust item width for mobile */
-    .item {
-        width: 90%; /* Make items take up most of the screen width */
-        max-width: 350px; /* Prevent them from being too wide */
+    .logo {
+        max-width: 120px;
     }
 
-    /* Make sure buttons stack neatly */
-    .button-group {
-        flex-direction: column;
-        gap: 10px;
+    nav a {
+        display: block;
+        padding: 8px;
     }
 
-    .buy-button, .pattern-button {
-        width: 100%; /* Full width buttons */
+    section {
+        width: 90%;
+        padding: 15px;
     }
 }

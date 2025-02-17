@@ -1,70 +1,41 @@
-﻿<head>
-    <script>
-        fetch("Assets/header.html")
-            .then(response => response.text())
-            .then(data => document.head.innerHTML += data);
-    </script>
-</head>
-
-
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Commissions | Kurreations</title>
+    <title>Commissions - Kurreations</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="Assets/favicon.ico">
 </head>
 <body>
-
-    <!-- Logo and Navigation -->
     <header>
-        <a href="index.html">
-            <img src="Assets/logo.png" alt="Kurreations Logo">
-        </a>
+        <img src="Assets/logo.png" alt="Kurreations Logo" class="logo">
         <nav>
             <a href="index.html">Home</a> |
             <a href="about.html">About</a> |
             <a href="commissions.html">Commissions</a> |
-            <a href="https://www.etsy.com/shop/kurreations/?etsrc=sdt" target="_blank">Etsy Shop</a> |
+            <a href="https://www.etsy.com/shop/Kurreations">Etsy Shop</a> |
             <a href="tutorials.html">Tutorials</a>
         </nav>
     </header>
 
-    <!-- Commissions Section -->
-    <section class="commissions">
-        <h1>Custom Commissions</h1>
-        <p>Want something **weird, nerdy, or completely unique**? I got you!</p>
+    <section>
+        <h2>Custom Commissions</h2>
+        <p>Want something <strong>weird, nerdy, or completely unique</strong>? I got you!</p>
 
-        <div class="commission-steps">
-            <h2>How It Works:</h2>
-            <ol>
-                <li><strong>Submit Your Idea</strong> – Tell me what you'd like (plushies, figures, accessories, etc.).</li>
-                <li><strong>Design & Approval</strong> – I'll send sketches or mockups for your approval.</li>
-                <li><strong>Crafting Begins</strong> – Once confirmed, I’ll start crocheting your creation.</li>
-                <li><strong>Final Touches & Delivery</strong> – Once finished, I’ll ship it to you!</li>
-            </ol>
-        </div>
+        <h3>How It Works:</h3>
+        <ol>
+            <li><strong>Submit Your Idea</strong> – Tell me what you’d like (plushies, figures, accessories, etc.).</li>
+            <li><strong>Design & Approval</strong> – I’ll send sketches or mockups for your approval.</li>
+            <li><strong>Crafting Begins</strong> – Once confirmed, I’ll start crocheting your creation.</li>
+            <li><strong>Final Touches & Delivery</strong> – Once finished, I’ll ship it to you!</li>
+        </ol>
 
-        <div class="commission-pricing">
-            <h2>Pricing & Payment</h2>
-            <p>Prices vary based on **size, detail, and complexity**. I accept PayPal, Venmo, and other payment methods.</p>
-        </div>
+        <h3>Pricing & Payment</h3>
+        <p>Prices vary based on <strong>size, detail, and complexity</strong>. I accept PayPal, Venmo, and other payment methods.</p>
 
-        <div class="commission-form">
-            <h2>Request a Commission</h2>
-            <p>Email me at <a href="mailto:jesikurr@kurreations.com">jesikurr@kurreations.com</a> to start your custom order!</p>
-        </div>
+        <h3>Request a Commission</h3>
+        <p>Email me at <a href="mailto:jesikurr@kurreations.com">jesikurr@kurreations.com</a> to start your custom order!</p>
     </section>
-
-    <!-- Footer -->
-    <footer>
-        <p>
-            Follow me on
-            <a href="https://www.instagram.com/kurreations?igsh=MWd2b2s0cjV6ajdsMA%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer">Instagram</a> |
-            <a href="https://www.facebook.com/share/1Bghm1eyMm/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">Facebook</a> |
-        </p>
-    </footer>
-
 </body>
 </html>
