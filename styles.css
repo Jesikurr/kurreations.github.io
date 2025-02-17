@@ -1,10 +1,12 @@
 /* General Styles */
+/* General Styles */
 body {
     font-family: 'Arial', sans-serif;
-    background-image: url('Assets/black_crochet_background.png'); /* Ensure correct path */
+    background-image: url('./Assets/black_crochet_background.png'); /* Ensure correct relative path */
     background-size: cover;
     background-repeat: repeat;
     background-position: center;
+    background-attachment: fixed; /* Ensures background stays fixed */
     color: #fff;
     margin: 0;
     padding: 0;
