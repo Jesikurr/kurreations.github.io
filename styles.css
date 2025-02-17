@@ -68,11 +68,14 @@ p {
     width: 100%;
 }
 
+    /* 🔥 FINAL FIX: About Image 🔥 */
     .about-container img {
-        max-width: 300px; /* Forces max size */
+        max-width: 300px !important; /* Ensures the image does NOT get too big */
+        width: 100%; /* Ensures it scales properly */
         height: auto; /* Keeps the aspect ratio */
         border-radius: 10px;
         margin: 20px auto;
+        object-fit: contain; /* Ensures no stretching */
     }
 
 /* Section Styling */
