@@ -1,11 +1,11 @@
 /* General Styles */
 body {
     font-family: 'Arial', sans-serif;
-    background-image: url('Assets/black_crochet_background.png'); /* Updated path */
+    background-image: url('Assets/black_crochet_background.png'); /* Make sure this path is correct */
     background-size: cover;
-    background-repeat: repeat; /* Ensures a seamless crochet texture */
+    background-repeat: no-repeat;
     background-position: center;
-    background-attachment: fixed; /* Keeps background in place */
+    background-attachment: fixed; /* Ensures background stays fixed while scrolling */
     color: #fff;
     margin: 0;
     padding: 0;
@@ -51,10 +51,11 @@ p {
 
 /* About Page - Fix Large Image Issue */
 .about-container img {
-    max-width: 80%; /* Adjust width for responsiveness */
+    max-width: 60%; /* Reduce width to 60% for better scaling */
     height: auto;
     border-radius: 10px;
-    margin-bottom: 20px;
+    display: block;
+    margin: 20px auto; /* Center the image */
 }
 
 /* Sections - Fix Spacing */
