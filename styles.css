@@ -1,7 +1,7 @@
 /* General Styles */
 body {
     font-family: 'Arial', sans-serif;
-    background: url('Assets/black_crochet_background.png') repeat; /* Fix: Corrected path & added repeat */
+    background: url('/Assets/black_crochet_background.png') repeat;
     background-size: cover;
     background-attachment: fixed; /* Keeps background static */
     background-position: center;
