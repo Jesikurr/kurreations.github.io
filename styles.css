@@ -16,6 +16,15 @@ body {
     text-align: center;
 }
 
+section {
+    background: url('/Assets/black_crochet_background.png') repeat;
+    background-size: cover;
+    border-radius: 10px;
+    width: 85%;
+    margin: 20px auto;
+    padding: 40px 20px;
+}
+
 /* Logo Styling */
 .logo {
     display: block;
