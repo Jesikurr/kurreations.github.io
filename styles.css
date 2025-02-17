@@ -16,15 +16,6 @@ body {
     text-align: center;
 }
 
-section {
-    background: url('/Assets/black_crochet_background.png') repeat;
-    background-size: cover;
-    border-radius: 10px;
-    width: 85%;
-    margin: 20px auto;
-    padding: 40px 20px;
-}
-
 /* Logo Styling */
 .logo {
     display: block;
@@ -70,20 +61,17 @@ p {
 /* 🔥 FIXED: About Page Image Issue 🔥 */
 .about-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
+    align-items: center; /* Centers image and text */
     text-align: center;
+    width: 100%;
 }
 
     .about-container img {
-        max-width: 300px !important; /* 🔥 Strict max-width to prevent large images */
-        width: auto !important; /* 🔥 Ensures it does not expand to fill width */
-        height: auto !important; /* 🔥 Keeps the aspect ratio correct */
+        max-width: 300px !important; /* 🔥 Forces max size */
+        height: auto; /* 🔥 Keeps the aspect ratio */
         border-radius: 10px;
-        display: block;
         margin: 20px auto;
-        object-fit: contain;
     }
 
 /* Section Styling */
@@ -124,6 +112,6 @@ section {
     }
 
     .about-container img {
-        max-width: 250px !important; /* 🔥 Shrinks image even further on mobile */
+        max-width: 250px !important; /* 🔥 Shrinks image further on mobile */
     }
 }
