@@ -75,3 +75,32 @@ footer {
         footer a:hover {
             text-decoration: underline;
         }
+
+.commissions {
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+.commission-steps, .commission-pricing, .commission-form {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+    .commission-steps ol {
+        text-align: left;
+        display: inline-block;
+    }
+
+    .commission-form a {
+        color: #a67ffb;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+        .commission-form a:hover {
+            text-decoration: underline;
+        }
