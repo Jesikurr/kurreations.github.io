@@ -1,4 +1,13 @@
-﻿<!DOCTYPE html>
+﻿<head>
+    <script>
+        fetch("Assets/header.html")
+            .then(response => response.text())
+            .then(data => document.head.innerHTML += data);
+    </script>
+</head>
+
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">

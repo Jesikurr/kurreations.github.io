@@ -1,7 +1,15 @@
+<head>
+    <script>
+        fetch("Assets/header.html")
+            .then(response => response.text())
+            .then(data => document.head.innerHTML += data);
+    </script>
+</head>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="icon" type="image/x-icon" href="Assets/favicon.ico">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kurreations</title>
@@ -33,7 +41,7 @@
 <footer>
     <p>
         Follow me on <a href="https://www.instagram.com/kurreations?igsh=MWd2b2s0cjV6ajdsMA%3D%3D&utm_source=qr">Instagram</a> |
-        <a https://www.facebook.com/share/1Bghm1eyMm/?mibextid=wwXIfr">Facebook</a> |
+        <a https: //www.facebook.com/share/1Bghm1eyMm/?mibextid =wwXIfr">Facebook</a> |
         <a href="https://kurreations.etsy.com">Etsy</a>
     </p>
 </footer>
